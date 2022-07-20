@@ -1,0 +1,22 @@
+## Server config
+server:
+  port: 9010
+  servlet:
+    context-path: /api/ecom-service
+    
+# Spring application config
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/shopwaala_ecom_db
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: MYSQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
